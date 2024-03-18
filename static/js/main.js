@@ -3,7 +3,7 @@
 function toggleDarkMode() {
     var theme = localStorage.getItem("scheme"),
         toggle = document.getElementById("scheme-toggle"),
-        container = document.getElementsByTagName("html")[0];
+        container = document.getElementsByTagName("body")[0];
 
     if (theme === "dark") {
         if (typeof feather !== "undefined") {
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         mode.addEventListener("click", function () {
-            localStorage.setItem("scheme", document.documentElement.classList.contains('dark') ? "light" : "dark");
+            localStorage.setItem("scheme", document.body.classList.contains('dark') ? "light" : "dark");
             toggleDarkMode();
         });
     }
