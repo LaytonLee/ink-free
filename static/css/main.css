@@ -209,16 +209,20 @@ ul {
     display: inline;
 }
 
-/* Code */
+/* light mode, code style */
 .highlight pre {
     margin-bottom: 0;
     margin-top: 0;
     padding: 5px;
-    /* background-color: black !important; */
+    background-color: #f7f8ff !important;
 }
 
 .highlight {
     /* background: 0 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f7f8ff !important;
     font-size: 0.8em;
     max-width: 800px;
     overflow-x: auto;
@@ -624,5 +628,46 @@ code {
     color: #666;
     font-weight: 600;
   }
+
+
+/* copy-code-button */
+  .copy-code-button {
+    color: #272822;
+    background-color: #f7f8ff;
+    border-color: #272822;
+    border: 0;
+    border-radius: 5px;
+
+    /* right-align */
+    display: block;
+    padding-top: 0.4em;
+    margin-left: auto;
+    margin-right: 0;
+
+    font-size: 0.8em;
+    transform: scale(0.7);
+}
+
+.copy-code-button:hover {
+    cursor: pointer;
+    background-color: #f3f4f6;
+}
+
+.copy-code-button:focus {
+    /* Avoid an ugly focus outline on click in Chrome,
+       but darken the button for accessibility.
+       See https://stackoverflow.com/a/25298082/1481479 */
+    background-color: #f3f4f6;
+    outline: 0;
+}
+
+.copy-code-button:active {
+    background-color: #f3f4f6;
+}
+
+.highlight pre {
+    /* Avoid pushing up the copy buttons. */
+    margin: 0;
+}
   
 

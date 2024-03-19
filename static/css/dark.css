@@ -66,8 +66,13 @@ body.dark .footer {
   border-color: #333;
 }
 
+/* dark mode, code */
 body.dark .highlight {
-  background-color: #333;
+  background-color: #171b21 !important;
+}
+
+body.dark .highlight pre {
+  background-color: #171b21 !important;
 }
 
 body.dark .header .site-description .scheme-toggle a svg {
@@ -87,4 +92,25 @@ body.dark code:not(pre *)  {
 body.dark .section-nav li.active > a {
   font-weight: 600;
   color: #ddd;
+}
+
+/* copy-code-button */
+body.dark .copy-code-button {
+  background-color: #171b21 !important;
+}
+
+body.dark .copy-code-button > svg.feather-copy {
+  color: #848d97;
+}
+
+body.dark .copy-code-button:hover {
+  background-color: #30363d !important;
+}
+
+body.dark .copy-code-button:focus {
+  background-color: #30363d !important;
+}
+
+body.dark .copy-code-button:active {
+  background-color: #30363d !important;
 }
