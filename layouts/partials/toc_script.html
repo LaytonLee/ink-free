@@ -95,10 +95,10 @@
     document.addEventListener('DOMContentLoaded', function () {
         if (!enableTruncate) return;
         var navBar = navItems()
-        console.log(navBar)
+        // console.log(navBar);
         if (!lasItemInNavBarVisible()) {
             filterDepth = true;
-            //console.log("Filtering nav bar")
+            //console.log("Filtering nav bar");
             navBar.forEach(function (listItem) {
                 var depth = getDepth(listItem.parentElement);
 

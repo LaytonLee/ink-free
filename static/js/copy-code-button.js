@@ -26,8 +26,12 @@ function addCopyButtons(clipboard) {
         button.type = 'button';
         button.innerHTML = feather.icons.copy.toSvg();
 
+        // remove extra \n create by <span style="display:flex;">
+        var codeText = codeBlock.innerText;
+        var preparedCode = codeText.replace(/\n\n/g, "\n");
+
         button.addEventListener('click', function () {
-            clipboard.writeText(codeBlock.innerText).then(function () {
+            clipboard.writeText(preparedCode).then(function () {
                 /* Chrome doesn't seem to blur automatically,
                    leaving the button in a focused state. */
                 button.blur();
