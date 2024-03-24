@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
-
+{{ partial "header.html" . }}
 
 <body>
 	<div class="container wrapper tags">
 		{{ partial "head.html" . }}
-
-		{{ partial "header.html" . }}
 
 		{{ if .Site.Params.statisticsEnabled }}
 		{{ partial "statistics.html" . }}

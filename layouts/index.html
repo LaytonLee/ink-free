@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html {{ if (eq .Site.Params.mode "dark" ) }} class="dark" {{ end }}>
 {{ partial "header.html" . }}
 
-<body {{ if (eq .Site.Params.mode "dark" ) }} class="dark" {{ end }}>
+<body>
 	<div class="container wrapper">
 		{{ partial "head.html" . }}
 		<div class="recent-posts section">

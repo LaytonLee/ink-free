@@ -37,7 +37,13 @@
 	{{- else -}}
 		<script src="{{ .Site.BaseURL }}js/feather.min.js"></script>
 	{{- end -}}
-		<script src="{{ .Site.BaseURL }}js/main.js"></script>
+	
+	<script type="text/javascript">
+		var configMode = {{ .Site.Params.mode }};
+	</script>
+
+		<script src="{{ .Site.BaseURL }}js/dark-mode.js"></script>
+		<script type="module" src="{{ .Site.BaseURL }}js/main.js"></script>
 	{{- if isset .Site.Params "customjs" -}}
 		{{- range .Site.Params.customJS }}<script src="{{ $.Site.BaseURL }}{{ . }}"></script>{{- end }}
 	{{- end }}

@@ -1,116 +1,120 @@
-body.dark {
+html.dark {
   color: #ddd;
   background-color: #000;
 }
 
-body.dark ::-moz-selection {
-  background: #9375fd;
-  color: #fff;
-  text-shadow: none
-}
-
-body.dark ::selection {
-  background: #9375fd;
-  color: #fff;
-  text-shadow: none
-}
-
-body.dark hr {
-  border-color: #333;
-}
-
-body.dark blockquote {
-  border-color: #ddd;
-}
-
-body.dark h1,
-body.dark h2,
-body.dark h3,
-body.dark h4,
-body.dark h5,
-body.dark h6 {
+html.dark body {
   color: #ddd;
 }
 
-body.dark a, body.dark a:hover {
+html.dark ::-moz-selection {
+  background: #9375fd;
+  color: #fff;
+  text-shadow: none
+}
+
+html.dark ::selection {
+  background: #9375fd;
+  color: #fff;
+  text-shadow: none
+}
+
+html.dark hr {
+  border-color: #333;
+}
+
+html.dark blockquote {
+  border-color: #ddd;
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+  color: #ddd;
+}
+
+html.dark a, html.dark a:hover {
   color: #9375fd;
   text-decoration: none;
 }
 
-body.dark table tbody tr:nth-of-type(even) {
+html.dark table tbody tr:nth-of-type(even) {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-body.dark .site-description a,
-body.dark .site-description a:hover {
+html.dark .site-description a,
+html.dark .site-description a:hover {
   color: #ddd;
   text-decoration: underline;
 }
 
-body.dark a:hover {
+html.dark a:hover {
   opacity: 0.8;
 }
 
-body.dark .post-tags .tags a {
+html.dark .post-tags .tags a {
   border: 1px solid #ddd;
   color: #ddd;
 }
 
-body.dark .site-title a {
+html.dark .site-title a {
   color: #ddd;
   text-decoration: none !important;
 }
 
-body.dark .header nav,
-body.dark .footer {
+html.dark .header nav,
+html.dark .footer {
   border-color: #333;
 }
 
 /* dark mode, code */
-body.dark .highlight {
+html.dark .highlight {
   background-color: #171b21 !important;
 }
 
-body.dark .highlight pre {
+html.dark .highlight pre {
   background-color: #171b21 !important;
 }
 
-body.dark .header .site-description .scheme-toggle a svg {
+html.dark .header .site-description .scheme-toggle a svg {
     fill: #f8e04f !important;
     color: #f8e04f !important;
 }
 
-body.dark td pre code {
+html.dark td pre code {
   color: #333;
 }
 
-body.dark code:not(pre *)  {
+html.dark code:not(pre *)  {
   color: #ddd;
   background-color: #333;
 }
 
-body.dark .section-nav li.active > a {
+html.dark .section-nav li.active > a {
   font-weight: 600;
   color: #ddd;
 }
 
 /* copy-code-button */
-body.dark .copy-code-button {
+html.dark .copy-code-button {
   background-color: #171b21 !important;
 }
 
-body.dark .copy-code-button > svg.feather-copy {
+html.dark .copy-code-button > svg.feather-copy {
   color: #848d97;
 }
 
-body.dark .copy-code-button:hover {
+html.dark .copy-code-button:hover {
   background-color: #30363d !important;
 }
 
-body.dark .copy-code-button:focus {
+html.dark .copy-code-button:focus {
   background-color: #30363d !important;
 }
 
-body.dark .copy-code-button:active {
+html.dark .copy-code-button:active {
   background-color: #30363d !important;
 }
